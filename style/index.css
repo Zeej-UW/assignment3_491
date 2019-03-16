@@ -1,0 +1,85 @@
+﻿body {
+    background-color: black
+}
+
+canvas {
+    position: absolute;
+    left: 50%;
+    margin-left: -300px;
+    top: 51%;
+    margin-top: -300px;
+    background: white;
+}
+
+hr {
+    height: 2px;
+    color: black;
+    background-color: black;
+    border: none;
+}
+
+#sidebar {
+    position: relative;
+    left: 100%;
+    top: 8.5%;
+    width: 60%;
+    height: 100%;
+    background-color: black;
+    float: right;
+    font-family: Courier New;
+    font-size: 142%;
+    color: white;
+}
+
+#info {
+    position: absolute;
+    left: 8.5%;
+    top: 0%;
+    width: 85%;
+    height: 0%;
+    background-color: black;
+    float: right;
+    font-family: Courier New;
+    font-size: 142%;
+    color: white;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 640px;
+    height: 775px;
+    position: relative;
+}
+
+hr {
+    height: 3px;
+    color: white;
+    background-color: black;
+    border: none;
+}
+
+#music {
+    position: relative;
+    left: -50%;
+    top: 8.5%;
+    width: 36%;
+    height: 100%;
+    background-color: black;
+    float: right;
+    font-family: Courier New;
+    font-size: 120%;
+    color: white;
+}
+
+#bottom {
+    position: relative;
+    bottom: -25%;
+    left: -18%;
+    width: 36%;
+    height: 100%;
+    background-color: black;
+    float: right;
+    font-family: Courier New;
+    font-size: 120%;
+    color: white;
+}

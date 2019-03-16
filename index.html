@@ -1,0 +1,70 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CJ's Game of Life</title>
+    <script type="text/javascript" src="http://24.16.255.56:8888/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+    <link href="style/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <canvas id="gameWorld" tabindex="1" width="800" height="800" style="border: 1px solid white; background: white"></canvas>
+        <div id="sidebar">
+            <p>Number of tiles for the Game Board (Note: gets real laggy beyond 150)</p>
+            <input class="textField" id="sizeOfBoard" type="number"
+                   placeholder="Enter a val > 0)" />
+            <button class="button" id="sizeOfBoardButton" type="button">Submit</button>
+
+            <p>Enter custom stateID to save or load from (default = data1)</p>
+            <input class="textField" id="stateid"
+                   placeholder="Enter a stateid" />
+            <button class="button" id="stateidBut" type="button">Save</button>
+            </p>
+            <p>
+                P - (un)Pause Game
+                <hr />
+                C - Clear Board
+                <hr />
+                M - (un)Mute Music
+                <hr />
+                L - Load From DB with current stateID val
+                <hr />
+                S - Save to DB with current stateID val
+                <hr />
+                Right Arrow - Step Foward
+                <hr />
+                Click To Fill in Grid
+                <hr />
+            </p>
+        </div>
+
+        <div id="info">
+            Toggle random board generation:
+            <input type="checkbox" id="randomToggle" name="Random Toggle"
+                   checked>
+            <br />
+            Toggle Grid:
+            <input type="checkbox" id="gridToggle" name="Random Toggle"
+                   checked>
+            <br />
+        </div>
+
+
+        <div id="music">
+            Delicious music to help realize the inevitability of death:
+            <audio controls autoplay id="music">
+                <source src="./sound/gp.mp3" type="audio/mp3" />
+            </audio>
+            <br />
+        </div>
+        <div id="bottom">
+            <h3> A Game of Life</h3>
+        </div>
+
+    </div>
+</body>
+</html>
