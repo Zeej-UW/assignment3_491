@@ -1,7 +1,7 @@
 // This game shell was happily copied from Googler Seth Ladd's "Bad Aliens" game and his Google IO talk in 2011
 let name = "Charles Jackson"
 let stateid = "data1";
-let socket = io.connect("https://24.16.255.56:8888");
+let socket = io.connect("http://24.16.255.56:8888");
 
 window.requestAnimFrame = (function () {
     return window.requestAnimationFrame ||
